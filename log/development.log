@@ -182,3 +182,11 @@ Processing by PostsController#new as HTML
   Parameters: {"post"=>{"title"=>"fdsafas", "description"=>"fdafsa"}}
   Rendered posts/new.html.erb within layouts/application (0.1ms)
 Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new?post%5Btitle%5D=fdsafas&post%5Bdescription%5D=fdafsa" for 50.100.146.204 at 2019-01-25 21:48:08 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"title"=>"fdsafas", "description"=>"fdafsa"}}
+  Rendered posts/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 214ms (Views: 206.2ms | ActiveRecord: 0.0ms)
